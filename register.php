@@ -2,7 +2,6 @@
 $title = 'Register';
 require('shared/header.php');
 ?>
-<main>
     <h1>User Registeration</h1>
     <!--Instruction-->
     <h5>Passwords must be a minimum of 8 characters,
@@ -31,7 +30,6 @@ require('shared/header.php');
    </fieldset>
    <button class="btn" onclick="return comparePasswords();">Register</button>
     </form>
-</main>
 <?php
 require('shared/footer.php');
 ?>

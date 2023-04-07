@@ -2,7 +2,6 @@
 $title = 'Saving your registration';
 require('shared/header.php')
 ?>
-<main>
     <?php
     
     //capture data using POST method
@@ -70,7 +69,6 @@ require('shared/header.php')
         }
     }
     ?>
-</main>
 <?php
 require('shared/footer.php')
 ?>

@@ -2,7 +2,6 @@
 $title = 'Login Page';
 require('shared/header.php');
 ?>
-    <main>
         <h1>Login</h1>
         <?php 
         if(!empty($_GET['valid'])){
@@ -27,7 +26,6 @@ require('shared/header.php');
             <button class="btn">Login</button>
             <!--Form ends-->
         </form>
-    </main>
     <?php
     require('shared/footer.php');
     ?>
