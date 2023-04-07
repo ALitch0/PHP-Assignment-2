@@ -1,4 +1,5 @@
 <?php 
+$title = "Admin";
 include('shared/header.php');
 
 //connect to the database
@@ -25,7 +26,7 @@ echo"<h1>Users List</h1>
     foreach($users as $user){
     echo'<tr>
     <td>'.$user['email'].'</td>
-    <td><a href = "editUser.php?UserId='.$user['userId'].'">Edit</a></td>
+    <td><a href = "editUser.php?userId='.$user['userId'].'">Edit</a></td>
     <td><a href = "deleteUser.php?userId='.$user['userId'].'" onclick="return confirmDelete();">Delete</a></td>
     </tr>';
     }
