@@ -52,6 +52,7 @@ catch(Exception $error){
         onkeyup =" return comparePasswords();"/>              
         <span id="pwMsg" class="error"></span>
    </fieldset>
+   <input name="userId" id="userId" value="<?php echo $userId; ?>" type="hidden">
    <button class="btn" onclick="return comparePasswords();">Update</button>
     </form>
 <?php

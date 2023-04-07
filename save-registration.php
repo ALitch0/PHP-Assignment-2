@@ -52,7 +52,7 @@ require('shared/header.php')
             $cmd = $db->prepare($sql);
             $cmd->bindParam(':email', $email, PDO::PARAM_STR, 50);
 
-            //hash thr password before binding it to the password parameter
+            //hash the password before binding it to the password parameter
             $password = password_hash($password, PASSWORD_DEFAULT);
             $cmd->bindParam(':password', $password, PDO::PARAM_STR, 255);
 
