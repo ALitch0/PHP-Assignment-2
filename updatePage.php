@@ -39,7 +39,8 @@ if($ok = true){
         $db = null;
 
         //show confirmation
-        echo'<p>Your Page Info has been updated.</p>';
+        echo'<p>Your Page Info has been updated.</p>
+        <a href="pages.php">Go back to pages.</a>';
 
 }
 ?>

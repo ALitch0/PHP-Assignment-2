@@ -1,5 +1,6 @@
 <?php
 require('shared/header.php');
+if($_GET){
 //get page id from url link
 $pageId = $_GET['pageId'];
 
@@ -18,5 +19,6 @@ $page = $cmd->fetch();
 echo'<h1>'.$page['pageTitle'].'</h1>
     <p>'.$page['pageContent'].'</p>
 ';
+}
 require('shared/footer.php');
 ?>

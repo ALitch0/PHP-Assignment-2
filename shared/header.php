@@ -16,7 +16,9 @@
         <!--nav links-->
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="idx.php">Home</a></li>
+                <li><a href="admin.php">Admin</a></li>
+                <li><a href="pages.php">Pages</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="register.php">Register</a></li>
             </ul>

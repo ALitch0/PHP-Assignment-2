@@ -17,6 +17,8 @@ $pages = $cmd->fetchAll();
 
 //create a list using the varible in a loop
 echo'<h1>Pages</h1>
+    <!--to add new page-->
+    <a href="addPage.php">Add a new page</a>
     <table>
     <tr>
     <th>Title</th>
