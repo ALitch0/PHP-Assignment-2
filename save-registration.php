@@ -33,7 +33,7 @@ require('shared/header.php')
         $ok = false;
     }
 
-    if($ok = true){
+    if($ok == true){
         require('shared/db.php');
 
     //duplicate check
