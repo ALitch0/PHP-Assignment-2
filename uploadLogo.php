@@ -16,7 +16,7 @@ $ok = true;
 //ensure the file is jpg or png
 $type = mime_content_type($tmp_name);
 if($type !="image/png" && $type != "image/jpeg"){
-    echo 'Please Upload a .png or .jpg file';
+    echo '<p class="error">Please Upload a .png or .jpg file</p>';
     $ok = false;
 }
 

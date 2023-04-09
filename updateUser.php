@@ -65,8 +65,8 @@ if($ok = true){
         $db = null;
 
         //show confirmation
-        echo"<p>Your User Info has been updated.</p>
-        <a href='admin.php'>Back to User's List</a>";
+        echo"<p class='success'>Your User Info has been updated.</p>
+        <a href='adminusers.php' class='pageNav'>Back to User's List</a>";
 
 }
 ?>

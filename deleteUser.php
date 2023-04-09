@@ -31,5 +31,5 @@ catch(Exception $error){
 $db = null;
 
 //head back to original page admin.php
-header('location:admin.php')
+header('location:adminusers.php')
 ?>

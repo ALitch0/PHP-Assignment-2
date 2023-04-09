@@ -73,7 +73,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: 95%;
     margin: 0 auto;
   }
   fieldset{
@@ -87,14 +87,18 @@ body {
     display: inline-block;
     width: 100%;
   }
-  
-  form input[type=email], input[type=password], input[type=visible] {
+  /*styling form input for specific types*/
+  form input[type=email], input[type=password], input[type=visible]{
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 5px;
     width: 250px;
   }
 
+  form input[type='file']{
+    margin-right:auto;
+    padding: 20px 0;
+  }
   form button {
     margin-right: auto;
     padding: 10px;
@@ -114,7 +118,15 @@ body {
   form button:hover {
     background-color: #444;
   }
-
+  #pageTitle{
+    margin: 10px auto 10px 0;
+    width: 200px;
+  }
+  #pageContent{
+    margin: 10px auto 10px 0;
+    width: 750px;
+    height: 250px;
+  }
   /*styling main*/
   main{
     width: 90%;
@@ -137,7 +149,7 @@ body {
     grid-template-columns: repeat(2,50%);
   }
   .container section a{
-    background-color: #e9ae3f;
+    background-color: rgb(222, 167, 65);
     border:3px solid black;
     border-radius: 10px;
     margin: 20px;
@@ -165,6 +177,10 @@ body {
   .error{
     color: red;
   }
+  /*success*/
+  .success{
+    color: rgb(48, 183, 48);
+  }
   main h5{
     font-size: 1em;
   }
@@ -181,13 +197,27 @@ body {
     border: 1px solid #ccc;
     padding: 0.5rem;
   }
-  
   th {
     background-color: #f0f0f0;
     font-weight: bold;
     text-align: left;
   }
   
+  td:first-child a{
+    color: #de9816;
+    font-weight: bold;
+  }
+
   td {
     text-align: left;
+  }
+
+  /*styles for add a new user/pages*/
+  .pageNav{
+    background-color: #e9ae3f;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    color: #333;
   }

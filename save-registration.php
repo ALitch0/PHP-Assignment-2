@@ -62,7 +62,8 @@ require('shared/header.php')
             //disconnect from database
             $db=null;
             //show confirmation
-            echo 'Your registration was successful.';
+            echo '<p class ="success">Your registration was successful.</p>
+            <a href="login.php" class="pageNav">Login to your account.</a>';
         }
         else{
             echo'<p class="error">The user already exists.</p>';

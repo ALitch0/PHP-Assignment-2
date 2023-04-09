@@ -20,7 +20,7 @@ $users = $cmd->fetchAll();
 
 //create a list using the varible in a loop
 echo"<h1>Users List</h1>
-    <a href='resigter.php'>Add new User</a>
+    <a href='register.php' class='pageNav'>Add a new User</a>
     <table>
     <tr>
     <th>User's Email</th>
