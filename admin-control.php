@@ -25,5 +25,5 @@ require('shared/header.php');
 </section>
 </div>
 <?php
-require('shared/footer.php')
+require('shared/footer.php');
 ?>
