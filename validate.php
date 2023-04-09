@@ -29,8 +29,8 @@ else{
     else{
         //if both credentials are found, store the user idnetity in the $_SESSION
         session_start();
-        $_SESSION['cmsUsers'] = $email;
-        header('location:admin.php');
+        $_SESSION['cmsUser'] = $email;
+        header('location:adminusers.php');
         $db= null;
     }
 }

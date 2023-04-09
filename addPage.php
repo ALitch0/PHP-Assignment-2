@@ -1,4 +1,6 @@
 <?php
+//auth
+require('shared/auth.php');
 $title="Add new Page";
 require('shared/header.php');
 ?>

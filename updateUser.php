@@ -1,4 +1,7 @@
 <?php
+//auth
+require('shared/auth.php');
+
 $title="Updating your Info";
 require('shared/header.php');
 
@@ -63,7 +66,7 @@ if($ok = true){
 
         //show confirmation
         echo"<p>Your User Info has been updated.</p>
-        <a href='admin.php'>Back to User's List";
+        <a href='admin.php'>Back to User's List</a>";
 
 }
 ?>

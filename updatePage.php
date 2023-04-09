@@ -1,4 +1,7 @@
 <?php
+//auth
+require('shared/auth.php');
+
 $title="Updating your Info";
 require('shared/header.php');
 

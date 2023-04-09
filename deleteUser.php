@@ -1,4 +1,7 @@
 <?php
+//auth
+require('shared/auth.php');
+
 //hidden page
 try{
 //grab userId from the link using get

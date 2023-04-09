@@ -1,4 +1,7 @@
 <?php 
+//auth
+require('shared/auth.php');
+
 $title = "Pages";
 include('shared/header.php');
 

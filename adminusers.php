@@ -1,5 +1,8 @@
-<?php 
-$title = "Admin";
+<?php
+//auth
+require('shared/auth.php');
+
+$title = "Admin User's";
 include('shared/header.php');
 
 //connect to the database

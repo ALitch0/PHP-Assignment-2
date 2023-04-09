@@ -1,4 +1,7 @@
 <?php
+//auth
+require('shared/auth.php');
+
 $title="Saving your page.";
 require('shared/header.php');
 

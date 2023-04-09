@@ -1,4 +1,7 @@
-<?php 
+<?php
+//auth
+require('shared/auth.php');
+
 $title = "Edit";
 require('shared/header.php');
 try{
