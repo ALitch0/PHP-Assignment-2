@@ -44,6 +44,8 @@ if($ok = true){
         //show confirmation
         echo'<p>Your Page Info has been updated.</p>
         <a href="pages.php">Go back to pages.</a>';
-
+}
+else{
+    header('error.php');
 }
 ?>

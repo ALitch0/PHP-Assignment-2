@@ -41,7 +41,10 @@ if($ok == true){
     //disconnect
     $db=null;
 
-    echo 'Logo uploaded successfully.';
+    echo '<p class="success">Logo uploaded successfully.</p>';
+}
+else{
+    header('location:error.php');
 }
 
 

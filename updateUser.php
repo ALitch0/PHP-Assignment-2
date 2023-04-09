@@ -69,4 +69,7 @@ if($ok = true){
         <a href='adminusers.php' class='pageNav'>Back to User's List</a>";
 
 }
+else{
+    header('loaction:error.php');
+}
 ?>

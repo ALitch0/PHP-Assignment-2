@@ -4,7 +4,7 @@ require('shared/auth.php');
 
 $title = "Pages";
 include('shared/header.php');
-
+try{
 //connect to the database
 include('shared/db.php');
 
@@ -39,6 +39,11 @@ echo'<h1>Pages</h1>
 
     //disconnect db
     $db = null;
+}
+catch(Exception $error){
+    header('location:error.php');
+    exit();
+}
 
     require('shared/footer.php');
     ?>

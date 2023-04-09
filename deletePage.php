@@ -23,13 +23,14 @@ $sql = "DELETE FROM pages WHERE pageId = :pageId";
 $cmd= $db->prepare($sql);
 $cmd->bindParam(':pageId', $pageId, PDO::PARAM_INT);
 $cmd->execute();
+
+//disconnect the database
+$db = null;
 }
 catch(Exception $error){
     header('error.php');
+    exit();
 }
-//disconnect the database
-$db = null;
-
 //head back to original page admin.php
 header('location:pages.php')
 ?>

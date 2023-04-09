@@ -2,6 +2,7 @@
 //auth
 require('shared/auth.php');
 
+try{
 $title="Saving your page.";
 require('shared/header.php');
 
@@ -40,8 +41,12 @@ if($ok == true){
     $db=null;
 
     //show confirmation
-    echo 'Your page was created successfully.
-    <a href="pages.php">See the updated list.</a>';
+    echo '<p class="success">Your page was created successfully.</p>
+    <a href="pages.php" class="pageNav">See the updated list.</a>';
+}
+}
+catch(Exception $error){
+    header('location:error.php');
 }
 require('shared/footer.php');
 ?>

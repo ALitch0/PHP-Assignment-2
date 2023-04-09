@@ -23,12 +23,15 @@ $sql = "DELETE FROM cmsUsers WHERE userId = :userId";
 $cmd= $db->prepare($sql);
 $cmd->bindParam(':userId', $userId, PDO::PARAM_INT);
 $cmd->execute();
+
+//disconnect the database
+$db = null;
+
 }
 catch(Exception $error){
     header('error.php');
 }
-//disconnect the database
-$db = null;
+
 
 //head back to original page admin.php
 header('location:adminusers.php')

@@ -5,6 +5,7 @@ require('shared/auth.php');
 $title = "Admin User's";
 include('shared/header.php');
 
+try{
 //connect to the database
 include('shared/db.php');
 
@@ -37,5 +38,10 @@ echo"<h1>Users List</h1>
 echo'</table>';
 //disconnect the database
 $db = null;
+}
+catch(Exception $error){
+    header('location:error.php');
+    exit();
+}
 include('shared/footer.php');
 ?>
