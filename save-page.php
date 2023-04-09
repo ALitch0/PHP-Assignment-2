@@ -40,7 +40,8 @@ if($ok == true){
     $db=null;
 
     //show confirmation
-    echo 'Your page was created successfully.';
+    echo 'Your page was created successfully.
+    <a href="pages.php">See the updated list.</a>';
 }
 require('shared/footer.php');
 ?>

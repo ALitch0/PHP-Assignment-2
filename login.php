@@ -21,8 +21,12 @@ require('shared/header.php');
             <!--Password Field-->
             <fieldset>
             <label for="password">Password:</label>
+            <div class="passwordContainer">
             <input type="password" name="password" id="password" required>
-            </fieldset>
+            <!-- An element to toggle between password visibility -->
+            <input type="button" onclick="return showPassword()" value="Show Password" id="showPass">   
+            </div>
+        </fieldset>
             <button class="btn">Login</button>
             <!--Form ends-->
         </form>

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Set default font family*/
+body {
+    font-family: Montserrat , sans-serif;
+  }
+
+*{
+    text-decoration: none;
+  }
+
+  /* Style the page header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Style the navigation links */
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 5px;
+  }
+  
+  nav a:hover {
+    color: #bab3b3;
+  }
+  nav a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e9ae3f;
+    transition: width .3s;
+  }
+  
+  nav a:hover::after{
+    width: 100%;
+  }
+  
+  /* Style the page footer */
+  footer {
+    position: fixed;
+    background-color: #e9ae3f;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px ;
+  }
+  
+  /* Style the login form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+  }
+  fieldset{
+    border: none;
+    width: 100%;
+    margin: 0;
+  }
+  form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  form input[type=email], input[type=password], input[type=visible] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+  }
+
+  form button {
+    margin-right: auto;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .passwordContainer{
+    display: flex;
+    gap: 20px;
+  }
+  form button:hover {
+    background-color: #444;
+  }
+
+  /*styling main*/
+  main{
+    width: 90%;
+    margin: 0 auto;
+  }
+  main h1{
+    font-size: 5em;
+    border-bottom: 2px solid black;
+  }
+  main p{
+    font-size: 1.2em;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+  }
+  /*styling admin-control*/
+  .container section{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+  }
+  .container section a{
+    background-color: #e9ae3f;
+    border:3px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container section a{
+    color: #333;
+  }
+  .container section p{
+    color: #fff
+  }
+  .container section a:hover{
+    background-color: #333;
+    color: #e9ae3f;
+  }
+  .container section a:hover p{
+    background-color: #333;
+    color: #fff;
+  }
+  /*error*/
+  .error{
+    color: red;
+  }
+  main h5{
+    font-size: 1em;
+  }
+  /*table*/
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  td {
+    text-align: left;
+  }

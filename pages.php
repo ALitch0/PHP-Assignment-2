@@ -30,9 +30,9 @@ echo'<h1>Pages</h1>
     </tr>';
     foreach($pages as $page){
         echo '<tr>
-        <td><a href="idx.php?pageId='.$page['pageId'].'">'.$page['pageTitle'].'</td>
+        <td><a href="index.php?pageId='.$page['pageId'].'">'.$page['pageTitle'].'</td>
         <td><a href="editPage.php?pageId='.$page['pageId'].'">Edit</a></td>
-        <td><a href="deletePage.php?pageId='.$page['pageId'].'">Delete</a></td>
+        <td><a href="deletePage.php?pageId='.$page['pageId'].'" onclick="return confirmDelete();">Delete</a></td>
         </tr>';
     }
     echo '</table>';

@@ -23,9 +23,13 @@ require('shared/header.php');
     <!--Confirm Password field-->
     <fieldset>
         <label for="confirm">Confirm Password: *</label>
+        <div class="passwordContainer">
         <input type="password" name="confirm" id="confirm" required
         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-        onkeyup =" return comparePasswords();"/>              
+        onkeyup =" return comparePasswords();"/>     
+        <!-- An element to toggle between password visibility -->
+        <input type="button" onclick="return showPassword()" value="Show Password" id="showPass">         
+        </div>
         <span id="pwMsg" class="error"></span>
    </fieldset>
    <button class="btn" onclick="return comparePasswords();">Register</button>
