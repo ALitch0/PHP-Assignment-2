@@ -6,7 +6,7 @@ require('shared/header.php');
 ?>
 <div class="container">
 <section>
-    <a href="adminUsers.php">
+    <a href="adminusers.php">
         <h3>View Admins</h3>
         <p>View & Mange Admin users</p>
     </a>
